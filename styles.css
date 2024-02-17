@@ -43,16 +43,15 @@ a {
     display: flex;
     flex-direction: row;
     list-style-type: none;
+    gap: 30px;
 }
 
 .loginList {
-    gap: 30px;
     font-size: 15px;
 }
 
 .heroLinks {
     padding-left: 0px;
-    gap: 30px;
 }
 
 #holidayLink {
