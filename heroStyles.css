@@ -1,0 +1,63 @@
+* {
+    font-family: Helvetica, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #e8e2ed;
+    margin: 0px;
+}
+
+.heroBG, .hero, .upperHero, .logo, .loginList, .heroLinks, .lowerHero {
+    display: flex;
+}
+
+.heroBG {
+    position: relative;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    background-color: rgb(74, 63, 84);
+    z-index: 1;
+}
+
+.upperHero, .logo, .lowerHero {
+    align-items: center;
+}
+
+.upperHero, .lowerHero {
+    justify-content: space-between;
+}
+
+.hero {
+    flex-direction: column;
+    margin: auto;
+    width: 60%;
+    color: #f4f0f7;
+
+}
+
+.loginList {
+    font-size: 15px;
+}
+
+.upperHero {
+    padding: 5px 0px 30px 0px;
+}
+
+.loginList, .heroLinks {
+    flex-direction: row;
+    list-style-type: none;
+    gap: 30px;
+}
+
+.heroLinks {
+    padding-left: 0px;
+}
+
+#holidayLink {
+    color: rgb(214, 111, 128);
+}
