@@ -10,24 +10,37 @@ body {
 a {
     text-decoration: none;
     color: #e8e2ed;
+    margin: 0px;
+}
+
+.heroBG, .subHeader, .recipeCard, .artContent, .chefInfo {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.heroBG {
+    display: flex;
+    background-color: rgb(74, 63, 84);
+    position: relative;
+    z-index: 1;
+}
+
+.hero, .bodyContent {
+    margin: auto;
+    width: 60%;
 }
 
 .hero {
     display: flex;
     flex-direction: column;
-    background-color: rgb(74, 63, 84);
     color: #f4f0f7;
-    padding: 15px 300px 0px 300px;
-    position: relative;
-    z-index: 1;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .upperHero {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 30px;
+    padding: 5px 0px 30px 0px;
 }
 
 .logo {
@@ -66,13 +79,18 @@ a {
     align-items: center;
 }
 
-.bodyContent {
-    display: flex;
-    padding: 30px 300px 0px 300px;
+.bodyBG {
     background-color: #f4f0f7;
     position: relative;
     z-index: 0;
+}
+
+.bodyContent {
+    display: flex;
+    margin: auto;
+    width: 60%;
     justify-content: space-between;
+    padding-top: 40px;
 }
 
 .featRecipes {
@@ -89,6 +107,7 @@ a {
     padding: 5px;
     margin-bottom: 5px;
     border-radius: 2px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .recipeCard {
@@ -147,6 +166,34 @@ a {
     gap: 3px;
 }
 
+.featArt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+}
+
+#art {
+    width: 175px;
+    text-align: center;
+}
+
+#artTitle {
+    display: flex;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.artContent {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    margin: 0px 15px;
+}
+
+
+
 .featChef {
     display: flex;
     flex-direction: column;
@@ -158,18 +205,29 @@ a {
     text-align: center;
 }
 
+#chefImg {
+    vertical-align: middle;
+}
+
 .chefInfo {
     display: flex;
     flex-direction: column;
-    width: 200px;
     height: 274px;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
     margin-bottom: 12px;
+    min-width: 200px;
+    max-width: 200px;
 }
 
-.chefDes {
+#chefTitle {
+    padding: 5px 0px 0px 5px;
+}
+
+.cardPara {
+    display: flex;
     font-size: 13px;
-    padding-top: 15px;
-    width: 145px;
+    padding: 15px 5px 5px 5px;
+    width: auto;
+    text-indent: 20px;
 }
